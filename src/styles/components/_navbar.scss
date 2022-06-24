@@ -1,0 +1,86 @@
+.header__container{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    background-color: #131921;
+    justify-content: space-around;
+    z-index: 9;
+    opacity: .95;
+
+    .header__logo{
+        width: 130px;
+        margin: 0 20px;
+        align-items: center;
+    }
+    .header__search{
+        display: flex;
+        align-items: center;
+        flex: 1;
+        .input__header-search{
+            height: 8px;
+            padding: 10px;
+            border-radius: 5px 0 0 5px;
+            width: 100%;
+            font-size: 16px;
+            border: 2px solid transparent;
+            transition: 200ms linear;
+            background-color: rgba(255, 255, 255, 0.932);
+            &:focus{
+                outline: none;
+                border: 2px solid #cd9042;
+                border-right: 0;
+                transition: 200ms linear;
+                background-color: rgb(255, 255, 255);
+            }
+        }
+        .search__icon{
+            padding: 5px;
+            height: 22px !important;
+            background-color: #cd9042;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: .2s ease;
+            &:hover{
+                color: white;
+                transition: .2s ease;
+            }
+        }
+    }
+    .header__nav{
+        display: flex;
+        align-items: center;
+
+        .header__nav-option{
+            display: flex;
+            margin: 0 10px;
+            color: white;
+            flex-direction: column;
+            cursor: pointer;
+
+            .nav__option-firstline{
+                font-size: 11px
+            }
+            .nav__option-secondline{
+                font-size: 15px;
+                font-weight: 800;
+            }
+        }
+        .header__nav-optionBasket{
+            display: flex;
+            margin: 0 10px;
+            align-items: center;
+            cursor: pointer;
+
+            .basket__icon{
+                color: white;
+                margin: 0 10px;
+            }
+            .basket__count{
+                color: white;
+                font-weight: 800;
+            }
+        }
+    }
+}

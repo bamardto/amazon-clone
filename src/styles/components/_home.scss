@@ -1,0 +1,25 @@
+.home__main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(127, 255, 212, 0.192);
+    .home__container{
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        .img__home-bg{
+            display: flex;
+            width: 100%;
+            height: auto;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+        .home__row{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+}
